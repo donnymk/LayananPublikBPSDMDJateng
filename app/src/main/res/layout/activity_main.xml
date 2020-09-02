@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="2"
+    tools:context=".MainActivity">
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!-- Portal Berita -->
+    <FrameLayout
+        app:layout_columnWeight="2"
+        app:layout_rowWeight="1"
+        android:background="#00897B"
+        android:onClick="webviewportal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/portal"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/portal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Portal Berita"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Open Data -->
+    <FrameLayout
+        app:layout_columnWeight="2"
+        app:layout_rowWeight="1"
+        android:background="#FDD835"
+        android:onClick="webviewopendata">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/opendata"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/opendata"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Open Data"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Portal PPID -->
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#43A047"
+        android:onClick="webviewppid">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ppid"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ppid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Portal PPID"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Layanan Informasi Publik -->
+    <FrameLayout
+        android:background="#FBE9E7"
+        android:onClick="activityLayananInformasi"
+        app:layout_columnWeight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layanan_informasi"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layanan_informasi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Layanan Informasi"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Statistik data Pelatihan dan Peserta -->
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#FF6D00"
+        android:onClick="activityInfoStatistik"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/statistik"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistik"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Statistik"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Agenda Kegiatan Pelatihan maupun non Pelatihan -->
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#FF9E80"
+        android:onClick="webviewagenda">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/agenda"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agenda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Agenda Kegiatan"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.gridlayout.widget.GridLayout>
