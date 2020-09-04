@@ -2,8 +2,111 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/halo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.go.jatengprov.bpsdmd.layananpublik.InfoStatistikActivity">
+    android:visibility="visible"
+    tools:context="id.go.jatengprov.bpsdmd.layananpublik.LayananInformasiActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="712dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="11dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:text="Informasi Statistik"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="#8BC34A"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_formulirpi"
+            android:text="Statistik Kelulusan Peserta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="#FF9800"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_formulirkeberatan"
+            android:text="Formulir Keberatan Atas Layanan Informasi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="#F44336"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_formulirpelaporan"
+            android:text="Formulir Pelaporan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#E0F2F1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="#4DD0E1"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_formulirsewaswp"
+            android:text="Formulir Pemesanan Sewa Gedung"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_inforiwayatpelatihan"
+            android:text="Info Riwayat Pelatihan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_elibrary"
+            android:text="E-Library"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
