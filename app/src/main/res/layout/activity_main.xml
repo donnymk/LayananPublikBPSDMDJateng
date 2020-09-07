@@ -42,7 +42,7 @@
                 android:layout_below="@+id/portal"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Portal Berita"
+                android:text="@string/menu_portal_berita"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -72,7 +72,7 @@
                 android:layout_below="@+id/opendata"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Open Data"
+                android:text="@string/menu_open_data"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -102,7 +102,7 @@
                 android:layout_below="@+id/ppid"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Portal PPID"
+                android:text="@string/menu_portal_ppid"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -133,7 +133,7 @@
                 android:layout_below="@+id/layanan_informasi"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Layanan Informasi"
+                android:text="@string/menu_layanan_informasi"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -164,7 +164,7 @@
                 android:layout_below="@+id/statistik"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Statistik"
+                android:text="@string/menu_statistik"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -194,7 +194,7 @@
                 android:layout_below="@+id/agenda"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Agenda Kegiatan"
+                android:text="@string/menu_agenda_kegiatan"
                 android:textColor="#292929"
                 android:textSize="18sp" />
         </RelativeLayout>

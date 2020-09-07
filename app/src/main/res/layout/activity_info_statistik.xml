@@ -38,36 +38,36 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="#8BC34A"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirpi"
-            android:text="Statistik Kelulusan Peserta"
+            android:text="@string/submenu_stat_pelatihan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="#FF9800"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirkeberatan"
-            android:text="Formulir Keberatan Atas Layanan Informasi"
+            android:text="@string/submenu_stat_kelulusan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="#F44336"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirpelaporan"
-            android:text="Formulir Pelaporan"
+            android:text="@string/submenu_stat_alumni"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#E0F2F1"
             android:textSize="15sp" />
@@ -75,34 +75,56 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="#4DD0E1"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirsewaswp"
-            android:text="Formulir Pemesanan Sewa Gedung"
+            android:text="@string/submenu_stat_wi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_inforiwayatpelatihan"
-            android:text="Info Riwayat Pelatihan"
+            android:text="@string/submenu_hasil_evaluasi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_elibrary"
+            android:text="@string/submenu_capaian_anggaran"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_elibrary"
+            android:text="@string/submenu_stat_sdm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_elibrary"
-            android:text="E-Library"
+            android:text="@string/submenu_stat_permohonan_informasi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
