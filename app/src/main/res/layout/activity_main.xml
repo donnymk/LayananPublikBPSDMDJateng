@@ -22,7 +22,7 @@
     <FrameLayout
         app:layout_columnWeight="2"
         app:layout_rowWeight="1"
-        android:background="#00897B"
+        android:background="#4CAF50"
         android:onClick="webviewportal">
 
         <RelativeLayout
@@ -34,7 +34,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_outline_home_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_baseline_lock_open_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
     <FrameLayout
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
-        android:background="#43A047"
+        android:background="#FFEBEE"
         android:onClick="webviewppid">
 
         <RelativeLayout
@@ -94,7 +94,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_outline_menu_book_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
 
     <!-- Layanan Informasi Publik -->
     <FrameLayout
-        android:background="#FBE9E7"
+        android:background="#FF5722"
         android:onClick="activityLayananInformasi"
         app:layout_columnWeight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,7 +125,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_outline_room_service_24_white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,7 +134,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:text="@string/menu_layanan_informasi"
-                android:textColor="#292929"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
         </RelativeLayout>
     </FrameLayout>
@@ -143,7 +143,7 @@
     <FrameLayout
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
-        android:background="#FF6D00"
+        android:background="#673AB7"
         android:onClick="activityInfoStatistik"
         >
 
@@ -156,7 +156,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_baseline_show_chart_24_white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -165,7 +165,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:text="@string/menu_statistik"
-                android:textColor="#292929"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
         </RelativeLayout>
     </FrameLayout>
@@ -174,7 +174,7 @@
     <FrameLayout
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
-        android:background="#FF9E80"
+        android:background="#4FC3F7"
         android:onClick="webviewagenda">
 
         <RelativeLayout
@@ -186,7 +186,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_outline_date_range_24" />
 
             <TextView
                 android:layout_width="wrap_content"

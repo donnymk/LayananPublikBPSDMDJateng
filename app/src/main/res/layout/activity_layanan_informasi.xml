@@ -45,6 +45,8 @@
             android:onClick="webview_formulirpi"
             android:text="Formulir Permohonan Informasi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_message_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -52,24 +54,28 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="#FF9800"
+            android:background="#FFB300"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirkeberatan"
             android:text="Formulir Keberatan Atas Layanan Informasi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="15sp" />
+            android:drawableStart="@drawable/ic_outline_message_24"
+            android:padding="16dp"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="#F44336"
+            android:background="#EF5350"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirpelaporan"
             android:text="Formulir Pelaporan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#E0F2F1"
+            android:textColor="#FFFFFF"
+            android:drawableStart="@drawable/ic_outline_message_24_white"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -77,11 +83,14 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="#4DD0E1"
+            android:background="#3D5AFE"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_formulirsewaswp"
             android:text="Formulir Pemesanan Sewa Gedung"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:drawableStart="@drawable/ic_outline_room_service_24_white"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -89,10 +98,13 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
+            android:background="#4DD0E1"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_inforiwayatpelatihan"
             android:text="Info Riwayat Pelatihan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_star_border_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -100,10 +112,13 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
+            android:background="#4DD0E1"
             android:fontFamily="sans-serif-medium"
             android:onClick="webview_elibrary"
             android:text="E-Library"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_library_books_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
     </LinearLayout>

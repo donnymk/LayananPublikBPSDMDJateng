@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Layanan Publik BPSDMD Jateng</string>
+    <string name="app_name">e-Publik BPSDMDJTG</string>
     <string name="menu_portal_berita">Portal Berita</string>
     <string name="menu_open_data">Open Data</string>
     <string name="menu_portal_ppid">Portal PPID</string>
-    <string name="menu_layanan_informasi">Layanan Informasi</string>
+    <string name="menu_layanan_informasi">Pelayanan Publik</string>
     <string name="menu_statistik">Statistik</string>
     <string name="menu_agenda_kegiatan">Agenda Kegiatan</string>
     <string name="submenu_stat_pelatihan">Statistik Data Pelatihan</string>

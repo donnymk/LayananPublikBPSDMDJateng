@@ -6,12 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context="id.go.jatengprov.bpsdmd.layananpublik.LayananInformasiActivity"
+    tools:context="id.go.jatengprov.bpsdmd.layananpublik.InfoStatistikActivity"
     tools:visibility="visible">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="712dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="11dp">
@@ -40,11 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
-            android:background="#8BC34A"
+            android:background="#00BFA5"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_formulirpi"
+            android:onClick="webview_stat_peserta"
             android:text="@string/submenu_stat_pelatihan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -52,11 +57,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
-            android:background="#FF9800"
+            android:background="#00BFA5"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_formulirkeberatan"
+            android:onClick="webview_stat_kelulusan"
             android:text="@string/submenu_stat_kelulusan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -64,12 +71,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
-            android:background="#F44336"
+            android:background="#00BFA5"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_formulirpelaporan"
+            android:onClick="webview_stat_alumni"
             android:text="@string/submenu_stat_alumni"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#E0F2F1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -77,11 +85,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
-            android:background="#4DD0E1"
+            android:background="#00BFA5"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_formulirsewaswp"
+            android:onClick="webview_stat_wi"
             android:text="@string/submenu_stat_wi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -89,10 +99,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
+            android:background="#DD2C00"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_inforiwayatpelatihan"
+            android:onClick="webview_hasil_eval"
             android:text="@string/submenu_hasil_evaluasi"
+            android:textColor="#FFFFFF"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24_white"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -100,21 +114,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="8dp"
+            android:background="#DD2C00"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_elibrary"
+            android:onClick="webview_capaian_anggaran"
             android:text="@string/submenu_capaian_anggaran"
+            android:textColor="#FFFFFF"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="8dp"
-            android:fontFamily="sans-serif-medium"
-            android:onClick="webview_elibrary"
-            android:text="@string/submenu_stat_sdm"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24_white"
+            android:padding="16dp"
             android:textSize="15sp" />
 
         <Button
@@ -122,13 +129,30 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="8dp"
+            android:background="#F3E5F5"
             android:fontFamily="sans-serif-medium"
-            android:onClick="webview_elibrary"
+            android:onClick="webview_stat_permohonan_informasi"
             android:text="@string/submenu_stat_permohonan_informasi"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#F3E5F5"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="webview_stat_sdm"
+            android:text="@string/submenu_stat_sdm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:drawableStart="@drawable/ic_outline_insert_chart_outlined_24"
+            android:padding="16dp"
             android:textSize="15sp" />
 
     </LinearLayout>
-
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

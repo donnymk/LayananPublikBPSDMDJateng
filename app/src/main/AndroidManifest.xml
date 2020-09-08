@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/logo_jateng_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfoStatistikActivity"></activity>
+        <activity
+            android:name=".InfoStatistikActivity"
+            android:label="Informasi Statistik">
+        </activity>
         <activity android:name=".WebviewActivity" />
         <activity android:name=".LayananInformasiActivity"></activity>
         <activity android:name=".MainActivity">
