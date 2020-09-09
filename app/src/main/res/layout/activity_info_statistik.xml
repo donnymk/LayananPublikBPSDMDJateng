@@ -19,25 +19,6 @@
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="11dp">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginEnd="8dp"
-            android:text="Informasi Statistik"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_margin="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="29dp" />
-
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider" />
-
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"

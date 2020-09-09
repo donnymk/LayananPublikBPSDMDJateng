@@ -3,6 +3,7 @@ package id.go.jatengprov.bpsdmd.layananpublik;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -26,19 +27,22 @@ public class WebviewActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // judul activity dibuat dinamis
+        String judul = getIntent().getExtras().getString("title");
+        this.setTitle(judul);
+
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Memuat Data...");
-        progressDialog.setCancelable(false);
+        progressDialog.setCancelable(true);
 
         WebView wvPage1;
         String alamat = getIntent().getExtras().getString("url");
 
         wvPage1 = (WebView) findViewById(R.id.web_view);
-        //url = "https://bpsdmd.jatengprov.go.id/infografis/riwayatdiklat/";
         wvPage1.loadUrl(alamat);
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        settings.setBuiltInZoomControls(true);
+        settings.setBuiltInZoomControls(false);
         wvPage1.setWebViewClient(new MyWebViewClient());
         wvPage1.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView view, int progress) {

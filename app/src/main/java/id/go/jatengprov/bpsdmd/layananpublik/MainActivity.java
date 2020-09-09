@@ -34,48 +34,29 @@ public class MainActivity extends AppCompatActivity {
     public void webviewportal(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
         webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id");
+        webviewactivity.putExtra("title", "Portal Berita");
         startActivity(webviewactivity);
     }
 
     public void webviewppid(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
         webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id/v2/ppid");
-        startActivity(webviewactivity);
-    }
-
-    public void webviewdaftaronline(View view) {
-        Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
-        webviewactivity.putExtra("url", "https://daftar.bpsdmd.jatengprov.go.id/");
-        startActivity(webviewactivity);
-    }
-
-    public void webviewrwytdiklat(View view) {
-        Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
-        webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id/infografis/riwayatdiklat/");
+        webviewactivity.putExtra("title", "Portal PPID");
         startActivity(webviewactivity);
     }
 
     public void webviewopendata(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
         webviewactivity.putExtra("url", "http://data.jatengprov.go.id/organization/badan-pengembangan-sumber-daya-manusia-provinsi-jawa-tengah");
+        webviewactivity.putExtra("title", "Open Data");
         startActivity(webviewactivity);
     }
 
-    public void webviewepublik(View view) {
-        Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
-        webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id/epublic/");
-        startActivity(webviewactivity);
-    }
-
-    public void webviewinfosewa(View view) {
-        Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
-        webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id/infosewa/");
-        startActivity(webviewactivity);
-    }
 
     public void webviewagenda(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
         webviewactivity.putExtra("url", "https://bpsdmd.jatengprov.go.id/siagnes/");
+        webviewactivity.putExtra("title", "Agenda Kegiatan");
         startActivity(webviewactivity);
     }
 

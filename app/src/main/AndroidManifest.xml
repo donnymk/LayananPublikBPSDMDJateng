@@ -15,12 +15,14 @@
             android:name=".InfoStatistikActivity"
             android:label="Informasi Statistik">
         </activity>
-        <activity android:name=".WebviewActivity" />
-        <activity android:name=".LayananInformasiActivity"></activity>
+        <activity android:name=".WebviewActivity"/>
+        <activity
+            android:name=".LayananInformasiActivity"
+            android:label="Pelayanan Publik">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
