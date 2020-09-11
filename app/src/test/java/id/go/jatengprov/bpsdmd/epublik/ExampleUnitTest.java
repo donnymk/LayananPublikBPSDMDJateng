@@ -1,4 +1,4 @@
-package id.go.jatengprov.bpsdmd.layananpublik;
+package id.go.jatengprov.bpsdmd.epublik;
 
 import org.junit.Test;
 

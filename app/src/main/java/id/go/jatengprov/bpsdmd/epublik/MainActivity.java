@@ -1,4 +1,4 @@
-package id.go.jatengprov.bpsdmd.layananpublik;
+package id.go.jatengprov.bpsdmd.epublik;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
 
-//import id.go.jatengprov.bpsdmd.layananpublik.ui.main.MainFragment;
+//import id.go.jatengprov.bpsdmd.epublik.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
