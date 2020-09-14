@@ -1,17 +1,27 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    signingConfigs {
+        Tandatangan {
+            storeFile file('D:\\Google Drive\\duty\\BPSDMD\\APLIKASI\\APK (Android)\\e-Publik (2020)\\upload-keystore.jks')
+            storePassword 'l117k117'
+            keyAlias 'key01'
+            keyPassword 'o6o77599'
+        }
+    }
+    compileSdkVersion 29
     defaultConfig {
         applicationId 'id.go.jatengprov.bpsdmd.epublik'
         minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
+        targetSdkVersion 29
+        versionCode 2
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        signingConfig signingConfigs.Tandatangan
     }
     buildTypes {
         release {
+            debuggable true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -22,13 +32,13 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:2.0.1'
-    implementation 'android.arch.lifecycle:extensions:1.1.1'
-    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }

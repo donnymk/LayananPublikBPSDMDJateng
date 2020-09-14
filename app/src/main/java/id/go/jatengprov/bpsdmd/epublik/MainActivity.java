@@ -1,6 +1,9 @@
 package id.go.jatengprov.bpsdmd.epublik;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.Manifest;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,8 +13,17 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
+    // write permission on external storage
+    private static int REQUEST_CODE=1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // write permission on external storage
+        ActivityCompat.requestPermissions(this, new String[]{
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+        }, REQUEST_CODE);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 /*        if (savedInstanceState == null) {

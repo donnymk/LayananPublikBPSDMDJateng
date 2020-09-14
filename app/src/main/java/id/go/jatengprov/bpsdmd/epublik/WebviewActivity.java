@@ -27,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class WebviewActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
-
+//public class WebviewActivity extends AppCompatActivity {
     WebView wvPage1;
     private SwipeRefreshLayout refreshLayout;
 
@@ -36,8 +36,10 @@ public class WebviewActivity extends AppCompatActivity implements SwipeRefreshLa
     public static final int REQUEST_SELECT_FILE = 100;
     private final static int FILECHOOSER_RESULTCODE = 1;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
@@ -142,7 +144,7 @@ public class WebviewActivity extends AppCompatActivity implements SwipeRefreshLa
                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, URLUtil.guessFileName(url, contentDisposition, mimeType));
                 DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 dm.enqueue(request);
-                Toast.makeText(getApplicationContext(), "Mengunduh berkas", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Mengunduh berkas...", Toast.LENGTH_LONG).show();
             }
         });
     }
