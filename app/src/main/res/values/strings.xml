@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">e-Publik BPSDMDJTG</string>
     <string name="menu_portal_berita">Portal Berita</string>
-    <string name="menu_open_data">Open Data</string>
+    <string name="menu_open_data">Open Data JatengProv</string>
+    <string name="menu_open_data2">Open Data BPSDMD</string>
     <string name="menu_portal_ppid">Portal PPID</string>
     <string name="menu_layanan_informasi">Pelayanan Publik</string>
     <string name="menu_statistik">Informasi Statistik</string>

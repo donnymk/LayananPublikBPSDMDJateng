@@ -65,7 +65,37 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/menu_open_data"
                 android:textColor="#292929"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Open Data 2 -->
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#FDD835"
+        android:onClick="webviewopendata2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/opendata2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_lock_open_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/opendata2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/menu_open_data2"
+                android:textColor="#292929"
+                android:textSize="14sp" />
         </RelativeLayout>
     </FrameLayout>
 

@@ -60,10 +60,15 @@ public class MainActivity extends AppCompatActivity {
     public void webviewopendata(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
         webviewactivity.putExtra("url", "http://data.jatengprov.go.id/organization/badan-pengembangan-sumber-daya-manusia-provinsi-jawa-tengah");
-        webviewactivity.putExtra("title", "Open Data");
+        webviewactivity.putExtra("title", "Open Data (situs web JatengProv)");
         startActivity(webviewactivity);
     }
-
+    public void webviewopendata2(View view) {
+        Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
+        webviewactivity.putExtra("url", "http://36.89.239.53/alona");
+        webviewactivity.putExtra("title", "Open Data (situs web BPSDMD)");
+        startActivity(webviewactivity);
+    }
 
     public void webviewagenda(View view) {
         Intent webviewactivity= new Intent(MainActivity.this, WebviewActivity.class);
